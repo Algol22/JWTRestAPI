@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "60d22fed-23ee-4a72-a272-f55ec302e6eb",
+		"name": "http://3.214.160.52/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register user",
+			"_postman_id": "6720b4e1-47a3-400f-b7e9-2240af5b84f8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"John\",\r\n    \"password\":\"Doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://3.214.160.52:80/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Auth and Get Token",
+			"_postman_id": "9f92f7ba-711d-4176-a2ec-bb51bed4bf14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"login\":\"John\",\r\n    \"password\":\"Doe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://3.214.160.52:80/auth"
+			},
+			"response": []
+		},
+		{
+			"name": "Auth with Token",
+			"_postman_id": "cbed5381-f7aa-450b-bf7a-7e25c9ad5a3c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://3.214.160.52:80/user/get"
+			},
+			"response": []
+		}
+	]
+}
